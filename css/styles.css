@@ -780,11 +780,30 @@ body.entrance-lock {
 
   .hero-section {
     padding-top: 88px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-headline {
+    max-width: 100%;
+  }
+
+  .hero-subheadline {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero-actions {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
   }
 
   .btn {
