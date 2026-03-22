@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Gallery | Ultimate Fitness Gym</title>
+  <meta name="description" content="Explore Ultimate Fitness Gym gallery in Khidirpur, Kolkata.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            carbon: '#0a0a0a',
+            matte: '#111111',
+            ember: '#e10600',
+            emberSoft: '#ff3b2e'
+          }
+        }
+      }
+    };
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="text-white bg-black">
+  <header class="site-header">
+    <nav class="nav-shell">
+      <a href="index.html" class="brand" aria-label="Ultimate Fitness Gym Home">
+        <span class="brand-mark">UF</span>
+        <span class="brand-text">Ultimate Fitness Gym</span>
+      </a>
+
+      <div class="nav-links desktop-only">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="gallery.html" class="active">Gallery</a>
+      </div>
+
+      <div class="desktop-only">
+        <a href="index.html#join" class="btn btn-solid">Join Now</a>
+      </div>
+
+      <button id="mobile-menu-btn" class="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu-overlay">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <div id="mobile-menu-overlay" class="mobile-menu-overlay" aria-hidden="true">
+      <button id="mobile-menu-close" class="mobile-close" type="button" aria-label="Close menu">Close</button>
+      <div class="mobile-menu-links">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#join" class="btn btn-solid">Join Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="gallery-hero section-reveal">
+      <div class="container-wide">
+        <p class="kicker">Gallery</p>
+        <h1 class="section-title">Inside Ultimate Fitness Gym</h1>
+        <p class="section-copy">A look at our training floor, equipment, and atmosphere.</p>
+      </div>
+    </section>
+
+    <section class="section-shell section-reveal">
+      <div class="container-wide">
+        <!-- Gym media sourced from provided image links. -->
+        <div class="gallery-grid" id="gallery-grid">
+          <article class="gallery-item" data-src="https://images.jdmagicbox.com/comp/kolkata/a5/033pxx33.xx33.220416092517.r2a5/catalogue/ultimate-fitness-gym-khidirpur-kolkata-gyms-vP6aaNSjPA-250.jpg" data-alt="Gym Interior">
+            <img src="https://images.jdmagicbox.com/comp/kolkata/a5/033pxx33.xx33.220416092517.r2a5/catalogue/ultimate-fitness-gym-khidirpur-kolkata-gyms-vP6aaNSjPA-250.jpg" alt="Gym Interior" loading="lazy">
+            <span class="gallery-overlay">View</span>
+          </article>
+
+          <article class="gallery-item" data-src="https://images.jdmagicbox.com/comp/kolkata/a5/033pxx33.xx33.220416092517.r2a5/catalogue/ultimate-fitness-gym-khidirpur-kolkata-gyms-8NwxduF6Bm-250.jpg" data-alt="Strength Zone">
+            <img src="https://images.jdmagicbox.com/comp/kolkata/a5/033pxx33.xx33.220416092517.r2a5/catalogue/ultimate-fitness-gym-khidirpur-kolkata-gyms-8NwxduF6Bm-250.jpg" alt="Strength Zone" loading="lazy">
+            <span class="gallery-overlay">View</span>
+          </article>
+
+          <article class="gallery-item" data-src="https://images.jdmagicbox.com/comp/service_catalogue/fitness-centers-attr-aerobics-hot226-7-250.jpg" data-alt="Cardio Section">
+            <img src="https://images.jdmagicbox.com/comp/service_catalogue/fitness-centers-attr-aerobics-hot226-7-250.jpg" alt="Cardio Section" loading="lazy">
+            <span class="gallery-overlay">View</span>
+          </article>
+
+          <article class="gallery-item" data-src="https://images.jdmagicbox.com/comp/kolkata/a5/033pxx33.xx33.220416092517.r2a5/catalogue/ultimate-fitness-gym-khidirpur-kolkata-gyms-OYG2zPNBm6-250.jpg" data-alt="Personal Training Session">
+            <img src="https://images.jdmagicbox.com/comp/kolkata/a5/033pxx33.xx33.220416092517.r2a5/catalogue/ultimate-fitness-gym-khidirpur-kolkata-gyms-OYG2zPNBm6-250.jpg" alt="Personal Training Session" loading="lazy">
+            <span class="gallery-overlay">View</span>
+          </article>
+
+            <article class="gallery-item" data-src="https://images.jdmagicbox.com/comp/kolkata/a5/033pxx33.xx33.220416092517.r2a5/catalogue/ultimate-fitness-gym-khidirpur-kolkata-gyms-vD6dmAGN4O-250.jpg" data-alt="Personal Training Session">
+            <img src="https://images.jdmagicbox.com/comp/kolkata/a5/033pxx33.xx33.220416092517.r2a5/catalogue/ultimate-fitness-gym-khidirpur-kolkata-gyms-vD6dmAGN4O-250.jpg" alt="Personal Training Session" loading="lazy">
+            <span class="gallery-overlay">View</span>
+          </article>
+
+          <article class="gallery-item" data-src="https://images.jdmagicbox.com/comp/kolkata/a5/033pxx33.xx33.220416092517.r2a5/catalogue/ultimate-fitness-gym-khidirpur-kolkata-gyms-mokJPZ7iIG-250.jpg" data-alt="Functional Area">
+            <img src="https://images.jdmagicbox.com/comp/kolkata/a5/033pxx33.xx33.220416092517.r2a5/catalogue/ultimate-fitness-gym-khidirpur-kolkata-gyms-mokJPZ7iIG-250.jpg" alt="Functional Area" loading="lazy">
+            <span class="gallery-overlay">View</span>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close image">Close</button>
+    <button class="lightbox-nav prev" id="lightbox-prev" type="button" aria-label="Previous image">Prev</button>
+    <img id="lightbox-image" src="" alt="">
+    <button class="lightbox-nav next" id="lightbox-next" type="button" aria-label="Next image">Next</button>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container-wide footer-grid">
+      <div>
+        <h4>Ultimate Fitness Gym</h4>
+        <p>Khidirpur, Kolkata</p>
+      </div>
+      <div>
+        <h4>Focused Training</h4>
+        <p>Strength | Fat Loss | Muscle Building</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>info@ultimatefitnessgym.in</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</body>
+</html>
