@@ -245,14 +245,14 @@ img {
   z-index: 1;
 }
 
-/* Gradient fade from left to right - makes left side (text) more visible */
+/* Gradient fade from right to left - right side visible, left side faded black */
 .hero-bg-overlay {
   position: absolute;
   top: 0;
   right: 0;
   width: 70%;
   height: 100%;
-  background: linear-gradient(to left, var(--bg) 0%, rgba(9, 9, 9, 0.85) 40%, transparent 100%);
+  background: linear-gradient(to left, transparent 0%, rgba(9, 9, 9, 0.85) 60%, var(--bg) 100%);
   z-index: 2;
 }
 
